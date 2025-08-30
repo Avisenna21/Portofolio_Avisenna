@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="antialiased bg-white text-gray-900 select-none">
+
+  <!-- Navbar -->
+  <nav class="w-full border-b border-gray-200 sticky top-0 bg-white z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#home" class="flex items-center text-2xl font-bold text-blue-700"> My Portofolio </a>
+      <ul class="hidden md:flex items-center space-x-10 text-gray-600 font-medium">
+        <li><a href="#home" class="hover:text-blue-500 transition">Home</a></li>
+        <li><a href="#about" id="nav-about" class="hover:text-blue-500 transition">About</a></li>
+        <li><a href="#expertise" class="hover:text-blue-500 transition">Expertise</a></li>
+        <li><a href="#portfolio" class="hover:text-blue-500 transition">Portofolio</a></li>
+        <li><a href="#skills" class="hover:text-blue-500 transition">Skills</a></li>
+        <li><a href="#certificates" class="hover:text-blue-500 transition">Certificates</a></li>
+      </ul>
+      <a href="#contact" class="hidden md:inline-block px-5 py-2 border border-blue-700 text-blue-700 rounded-lg hover:bg-blue-700 hover:text-white transition font-semibold">Contact Me</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-indigo-50 py-20 px-6 md:px-20 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+    <div class="flex-1 max-w-2xl text-center md:text-left">
+      <p class="text-gray-700 text-xl mb-4 fade-in-1">
+        Hey, I am <span class="font-semibold text-blue-700">Muh Avisenna Kusumadani</span>
+      </p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 fade-in-2">
+        <span class="text-blue-800">SOFTWARE ENGINEERING</span>
+      </h1>
+      
+      <p id="animated-text" class="mt-6 text-gray-600 leading-relaxed max-w-lg mx-auto md:mx-0 text-lg whitespace-pre-line"></p>
+      <div class="mt-6 grid grid-flow-col auto-cols-max gap-4 text-sm font-medium text-gray-700">
+        <span class="px-4 py-2 bg-white rounded-lg shadow-sm opacity-0 animate-fadeInRight" style="animation-delay: 0.1s;">Testing</span>
+        <span class="px-4 py-2 bg-white rounded-lg shadow-sm opacity-0 animate-fadeInRight" style="animation-delay: 0.3s;">Quality Assurance</span>
+        <span class="px-4 py-2 bg-white rounded-lg shadow-sm opacity-0 animate-fadeInRight" style="animation-delay: 0.5s;">UI/UX Design</span>
+        <span class="px-4 py-2 bg-white rounded-lg shadow-sm opacity-0 animate-fadeInRight" style="animation-delay: 0.7s;">Frontend Development</span>
+     </div>
+
+
+    <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })" 
+      class="mt-10 px-8 py-3 bg-blue-700 rounded-xl text-white font-semibold hover:bg-blue-600 transition">
+      Mulai
+    </button>
+  </div>
+
+    <div class="flex-1 flex justify-end pr-6 relative">
+      <div aria-hidden="true" class="absolute top-8 right-4 w-[26rem] h-[26rem] rounded-full bg-gradient-to-tr from-pink-500 via-blue-300 to-blue-300 opacity-40 blur-3xl"></div>
+      <img src="img\Poto_Depan.png" alt="Portrait of Muh Avisenna Kusumadani" class="w-64 sm:w-72 md:w-[22rem] lg:w-[24rem] object-cover relative z-10" />
+      <div aria-hidden="true" class="absolute -top-6 right-10 w-40 h-40 rounded-full bg-purple-200 opacity-30 blur-2xl"></div>
+      <div aria-hidden="true" class="absolute bottom-0 right-20 w-32 h-32 rounded-full bg-blue-200 opacity-30 blur-2xl"></div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="relative max-w-7xl mx-auto px-6 md:px-20 py-20 flex flex-col md:flex-row items-center gap-16">
+    <div class="flex-1 relative max-w-xs md:max-w-sm">
+      <div class="absolute -top-10 -left-10 w-72 h-72 bg-blue-700 rounded-full opacity-80 -z-10"></div>
+      <img src="img\Poto_Me.png" alt="Portrait of young man wearing a black blazer and white shirt with a smiling expression, creative splash purple brush stroke background" class="image-mask relative rounded-lg shadow-lg z-10" />
+    </div>
+    <div class="flex-1 max-w-xl">
+      <h2 class="text-3xl font-extrabold mb-6">About Me</h2>
+      <p id="typing-text" class="text-gray-700 mb-4 leading-relaxed"></p>
+      <p id="typing-text-2" class="text-gray-600 mb-4 leading-relaxed"></p>
+    </div>
+  </section>
+
+<!-- Expertise Section -->
+<section id="expertise" class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold text-center mb-10">My Expertise</h2>
+  
+  <div class="flex flex-wrap gap-6 justify-center">
+    
+    <!-- Card 1: Testing -->
+    <div class="w-64 h-64 perspective">
+      <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+        
+        <!-- FRONT -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] bg-blue-50 rounded-xl shadow-md p-6 flex flex-col justify-center">
+          <img src="https://cdn-icons-png.freepik.com/512/7046/7046187.png" alt="Testing Icon" class="w-16 h-15 mb-4"/>
+          <h3 class="text-lg font-semibold text-gray-900">Testing</h3>
+          <p class="text-sm text-gray-600">Proficient in manual and automation testing software.</p>
+        </div>
+
+        <!-- BACK -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-blue-700 text-white rounded-xl shadow-md p-6 flex flex-col justify-center text-center">
+          <h3 class="text-lg font-bold mb-2">Detail</h3>
+          <p class="text-sm leading-relaxed text-left">
+            Skilled in manual and automation testing, executing test cases, finding defects, and ensuring software quality.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: QA -->
+    <div class="w-64 h-64 perspective">
+      <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+        
+        <!-- FRONT -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] bg-blue-50 rounded-xl shadow-md p-6 flex flex-col justify-center">
+          <img src="https://png.pngtree.com/png-vector/20240101/ourmid/pngtree-quality-assurance-concepts-style-illustrations-vector-png-image_11395336.png" alt="QA Icon" class="w-16 h-15 mb-4"/>
+          <h3 class="text-lg font-semibold text-gray-900">Quality Assurance</h3>
+          <p class="text-sm text-gray-600">Expert in software quality assurance.</p>
+        </div>
+
+        <!-- BACK -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-blue-700 text-white rounded-xl shadow-md p-6 flex flex-col justify-center text-center">
+          <h3 class="text-lg font-bold mb-2">Detail</h3>
+          <p class="text-sm leading-relaxed text-left">
+            Ensuring software quality by defining standards, streamlining QA processes, and maintaining product reliability.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: UI/UX -->
+    <div class="w-64 h-64 perspective">
+      <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+        
+        <!-- FRONT -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] bg-blue-50 rounded-xl shadow-md p-6 flex flex-col justify-center">
+          <img src="https://www.vhv.rs/dpng/d/419-4196067_bit-by-bit-of-web-application-development-ui.png" alt="UI/UX Icon" class="w-16 h-15 mb-4"/>
+          <h3 class="text-lg font-semibold text-gray-900">UI/UX</h3>
+          <p class="text-sm text-gray-600">Creating intuitive user experiences and clean interfaces.</p>
+        </div>
+
+        <!-- BACK -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-blue-700 text-white rounded-xl shadow-md p-6 flex flex-col justify-center text-center">
+          <h3 class="text-lg font-bold mb-2">Detail</h3>
+          <p class="text-sm leading-relaxed text-left">
+            Designing user-friendly interfaces and intuitive experiences that improve usability and satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Frontend -->
+    <div class="w-64 h-64 perspective">
+      <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+        
+        <!-- FRONT -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] bg-blue-50 rounded-xl shadow-md p-6 flex flex-col justify-center">
+          <img src="https://cdni.iconscout.com/illustration/premium/thumb/male-frontend-developer-illustration-svg-png-download-6817791.png" alt="Frontend Icon" class="w-16 h-15 mb-4"/>
+          <h3 class="text-lg font-semibold text-gray-900">Frontend Development</h3>
+          <p class="text-sm text-gray-600">Building responsive and user friendly web applications.</p>
+        </div>
+
+        <!-- BACK -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-blue-700 text-white rounded-xl shadow-md p-6 flex flex-col justify-center text-center">
+          <h3 class="text-lg font-bold mb-2">Detail</h3>
+          <p class="text-sm leading-relaxed text-left">
+            Proficient in building responsive, functional, and visually appealing applications with modern technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+   <!-- ===== Portfolio Section ===== -->
+  <section id="portfolio" class="bg-indigo-50 py-20 px-6 md:px-20 max-w-7xl mx-auto">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-3xl font-extrabold text-gray-900">My Portfolio</h2>
+    </div>
+
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-start">
+      
+      <!-- Card: UI/UX -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden min-h-[420px] flex flex-col" id="card-UI/UX">
+        <div class="card-content flex flex-col flex-grow">
+          <img src="https://thefinch.design/wp-content/uploads/2025/04/Top-UI-UX-Design-Trends-in-2025-To-Follow-1.jpg.webp" class="w-full h-40 object-cover" alt="Testing">
+          <div class="p-6 flex flex-col flex-grow justify-between">
+            <div>
+              <h3 class="font-semibold text-xl text-gray-900 mb-2">UI/UX Design</h3>
+              <p class="text-gray-600 text-sm mb-4">Designs intuitive and engaging user interfaces, focusing on seamless user experiences and visually appealing layouts.</p>
+            </div>
+            <button onclick="showProjects('UI/UX')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 w-full">Tampilkan</button>
+          </div>
+        </div>
+
+        <!-- Project List 1 -->
+        <div class="hidden project-list p-4 space-y-4">
+          <div class="bg-indigo-50 rounded-lg shadow overflow-hidden">
+            <img src="img\UI_BAGO.png" class="w-full h-24 object-cover" alt="Project">
+            <div class="p-3">
+              <h4 class="font-semibold text-gray-900">BaGo</h4>
+
+              <p class="text-gray-600 text-sm mt-2">
+               Bago is a UI/UX design project developed in collaboration with batik partners in Pekalongan.
+              </p>
+              
+              <p class="text-gray-600 text-sm mt-2">
+               The application is designed to support batik sales both domestically and internationally, specifically aimed at empowering small batik artisans (UMKM). 
+              </p>
+              
+              <p class="text-gray-600 text-sm mt-2">
+               This project was part of a student creativity research program supported by the Ministry of Education, Culture, Research, and Technology (Kemendikbudristek).
+              </p>
+              <a href="#https://www.figma.com/proto/SKlsmTOVMt80GbGqvmedjr/Project-Aplikasi?page-id=0%3A1&node-id=1-3&starting-point-node-id=1%3A3&t=dhndkecZM0PFCy5g-1" target="_blank" class="text-blue-700 text-sm font-semibold hover:underline">View Project</a>
+            </div>
+          </div>
+
+        <!--Project 2-->
+        <div class="bg-indigo-50 rounded-lg shadow overflow-hidden">
+            <img src="https://img.freepik.com/vektor-gratis/ilustrasi-ide-inovatif-yang-digambar-tangan_52683-76699.jpg?semt=ais_hybrid&w=740&q=80" class="w-full h-20 object-cover">
+            <div class="p-3">
+              <h4 class="font-semibold text-gray-900">SINTEN</h4>
+              <p class="text-gray-600 text-sm mb-2 mt-2">The design of the SINTEN application is an initiative for developing a sub district integration system, carried out at the official request of the Bulakamba Sub District Government, with the aim of enhancing the quality of village community services through a digital platform.</p>
+              <a href="https://www.figma.com/proto/SKlsmTOVMt80GbGqvmedjr/Project-Aplikasi?page-id=0%3A1&node-id=1-3&starting-point-node-id=1%3A3&t=dhndkecZM0PFCy5g-1" target="_blank" class="text-blue-700 text-sm font-semibold hover:underline">View Project</a>
+           </div>
+         </div>
+
+          <!--Project 3-->
+        <div class="bg-indigo-50 rounded-lg shadow overflow-hidden">
+            <img src="img\Kalkulus.png" class="w-full h-24 object-cover">
+         <div class="p-3">
+            <h4 class="font-semibold text-gray-900">Kalkulus Learning</h4>
+              <p class="text-gray-600 text-sm mb-2 mt-2">Kalculus Learning is a UI project developed as a major semester assignment with the goal of helping students struggling to understand Calculus. </p>
+              <p class="text-gray-600 text-sm mb-2 mt-2">This project provides a simple and interactive interface so students can learn basic to advanced concepts, such as limits, derivatives, and integrals, more easily and independently.</p>
+             <a href="https://www.figma.com/proto/GsuNv1uKOZvAAc9m7KhPza/kalkulus-learning?page-id=592%3A607&node-id=624-1148&starting-point-node-id=624%3A1148&t=zNnKJAJmInYQVghz-1" target="_blank" class="text-blue-700 text-sm font-semibold hover:underline">View Project</a>
+           </div>
+         </div>
+          <button onclick="backToCategory('UI/UX')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 w-full">Kembali</button>
+        </div>
+      </div>
+
+        <!-- Card 2: Testing -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden min-h-[420px] flex flex-col" id="card-testing">
+        <div class="card-content flex flex-col flex-grow">
+            <img src="https://st4.depositphotos.com/4320021/23910/v/450/depositphotos_239108410-stock-illustration-software-testing-software-development-workflow.jpg" class="w-full h-40 object-cover">
+        <div class="p-6 flex flex-col flex-grow justify-between">
+        <div>
+          <h3 class="font-semibold text-xl text-gray-900 mb-2">Testing</h3>
+          <p class="text-gray-600 text-sm mb-4">Hands on experience in manual and automation testing to ensure product quality and reliability.</p>
+        </div>
+        <button onclick="showProjects('testing')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg--500 w-full">Tampilkan</button>
+      </div>
+    </div>
+
+    <!-- Project List 1 -->
+    <div class="hidden project-list p-4 space-y-4">
+      <div class="bg-indigo-50 rounded-lg shadow overflow-hidden">
+        <img src="https://d2v4wz5vk7guj6.cloudfront.net/wp-content/uploads/2023/04/Hyper-Automation.jpg" class="w-full h-24 object-cover">
+        <div class="p-3">
+          <h4 class="font-semibold text-gray-900">Automation & Manual Testing</h4>
+          <p class="text-gray-600 text-sm mb-2 mt-2">This project was part of my final thesis research, conducted as a graduation requirement, focusing on manual testing of AI based programs, specifically Gemini and Blackbox, to ensure software quality and reliability.</p>
+          <a href="https://telkomuniversityofficial-my.sharepoint.com/:f:/g/personal/avisennakusumadani_student_telkomuniversity_ac_id/Ekn1HYlZnyFPnTQPDarUGn8BR2oSFZPHBHTqYwiuP9uWcA?e=NCVyfo" target="_blank" class="text-blue-700 text-sm font-semibold hover:underline">View Project</a>
+        </div>
+      </div>
+        <button onclick="backToCategory('testing')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 w-full">Kembali</button>
+     </div>
+    </div>
+
+    <!-- Card 3: Frontend Development -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden min-h-[420px] flex flex-col" id="card-web">
+    <div class="card-content flex flex-col flex-grow">
+      <img src="https://www.appventurez.com/wp-content/uploads/2019/06/js-framework-in-frontend-Development.png" class="w-full h-40 object-cover">
+      <div class="p-6 flex flex-col flex-grow justify-between">
+        <div>
+          <h3 class="font-semibold text-xl text-gray-900 mb-2">Frontend Development</h3>
+          <p class="text-gray-600 text-sm mb-4">I developed both web and mobile applications to ensure accessibility and usability across different platforms.</p>
+        </div>
+        <button onclick="showProjects('web')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 w-full mt-auto">Tampilkan</button>
+      </div>
+    </div>
+
+    <div class="hidden project-list p-4 space-y-4">
+      <div class="bg-indigo-50 rounded-lg shadow overflow-hidden">
+        <img src="https://img.freepik.com/vektor-gratis/ilustrasi-vektor-datar-orang-orang-di-perpustakaan_74855-6607.jpg" class="w-full h-24 object-cover">
+        <div class="p-3">
+          <h4 class="font-semibold text-gray-900">Pustaka Ceria</h4>
+          <p class="text-gray-600 text-sm mb-2">Pustaka Ceria is a semester project designed as an initiative for the digitalization of a web based library, with the objective of enhancing information services to be more modern, efficient, and easily accessible to users.</p>
+          <a href="https://github.com/Avisenna21/PustakaCeriaGUI.git" target="_blank" class="text-blue-700 text-sm font-semibold hover:underline">View Project</a>
+        </div>
+
+      </div>
+      <div class="bg-indigo-50 rounded-lg shadow overflow-hidden">
+        <img src="https://img.freepik.com/vektor-premium/pria-stres-di-kantor-lelah-melakukan-banyak-pekerjaan-sekaligus-konsep-stres-ilustrasi-vektor-datar_923732-4354.jpg" class="w-full h-24 object-cover">
+        <div class="p-3">
+          <h4 class="font-semibold text-gray-900">Job Dream</h4>
+          <p class="text-gray-600 text-sm mb-2 mt-2">Job Dream is an application that provides job vacancy information with the primary objective of assisting users in finding suitable employment opportunities.</p>
+          <p class="text-gray-600 text-sm mb-2 mt-2">Furthermore, the application is designed to facilitate easier access to job-related information, support career development, and serve as a bridge between job seekers and employers.</p>
+          <a href="https://github.com/Avisenna21/Proyek-Tingkat.git" target="_blank" class="text-blue-700 text-sm font-semibold hover:underline">View Project</a>
+        </div>
+      </div>
+
+      <button onclick="backToCategory('web')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 w-full">Kembali</button>
+    </div>
+  </div>
+
+  <!-- Card 4: Quality Assurance Apps -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden min-h-[420px] flex flex-col" id="card-mobile">
+    <div class="card-content flex flex-col flex-grow">
+      <img src="https://www.puredome.com/hs-fs/hubfs/Feature%20image%20Quality%20Assurance%20in%20Software%20Development%20Industry.png?width=1728&height=836&name=Feature%20image%20Quality%20Assurance%20in%20Software%20Development%20Industry.png" class="w-full h-40 object-cover">
+      <div class="p-6 flex flex-col flex-grow justify-between">
+        <div>
+          <h3 class="font-semibold text-xl text-gray-900 mb-2">Quality Assurance</h3>
+          <p class="text-gray-600 text-sm mb-4">Tested for Perfection, Delivered with Confidence.</p>
+        </div>
+        <button onclick="showProjects('mobile')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 w-full">Tampilkan</button>
+      </div>
+    </div>
+
+    <div class="hidden project-list p-4 space-y-4">
+      <div class="bg-indigo-50 rounded-lg shadow overflow-hidden">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhXMER7UvjGt5oWIGejLJw92n9f_ddS8N27Bq1wIoWO5fi5nmA61jRhJQZUXRhmcHeBQ&usqp=CAU" class="w-full h-24 object-cover">
+        <div class="p-3">
+          <h4 class="font-semibold text-gray-900">Job Dream</h4>
+          <p class="text-gray-600 text-sm mb-2 mt-2">The Quality Assurance (QA) section of the Job Dream application documents the results of the testing process carried out during development.</p>
+          <p class="text-gray-600 text-sm mb-2 mt-2">This section presents the outcomes of functional and usability tests to ensure that all features operate correctly and meet the expected requirements.</p>
+          <p class="text-gray-600 text-sm mb-2 mt-2">The recorded test results serve as evidence of system reliability, identify areas for improvement, and confirm that the application is ready for user implementation.</p>
+          <a href="https://docs.google.com/document/d/1jei4E6Mg6IPtC77DZCfl5hs6bG-JQb-pEMebd0SZkQg/edit?usp=sharing" target="_blank" class="text-blue-700 text-sm font-semibold hover:underline">View Project</a>
+        </div>
+      </div>
+      <button onclick="backToCategory('mobile')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 w-full">Kembali</button>
+    </div>
+  </div>
+</div>
+  </section>
+
+  
+  <!-- Skills Section -->
+<section id="skills" class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-gray-900 mb-10">Skills</h2>
+
+    <!-- Grid 2 kolom -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- HTML -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">HTML</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="HTML-progress" class="bg-red-500 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="HTML-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+      <!-- CSS -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">CSS</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="CSS-progress" class="bg-blue-500 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="CSS-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+      <!-- Python -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">Python</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="Python-progress" class="bg-yellow-600 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="Python-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">JavaScript</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="JavaScript-progress" class="bg-yellow-400 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="JavaScript-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+      <!-- C# -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C#" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">C#</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="CSharp-progress" class="bg-purple-500 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="CSharp-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+      <!-- GitHub -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">GitHub</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="GitHub-progress" class="bg-gray-800 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="GitHub-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+      <!-- SonarQube -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://cdn.worldvectorlogo.com/logos/sonarqube.svg" alt="SonarQube" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">SonarQube</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="SonarQube-progress" class="bg-blue-400 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="SonarQube-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+      <!-- Katalon -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://kursus-komputer.net/wp-content/uploads/2020/03/Automation-Testing-tools-dengan-Katalon-Studio-300x300.png" alt="Katalon" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">Katalon</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="Katalon-progress" class="bg-green-700 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="Katalon-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+      <!-- Docker -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">Docker</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="Docker-progress" class="bg-blue-600 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="Docker-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+      <!-- Cypress -->
+      <div class="w-full mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://cdn.worldvectorlogo.com/logos/cypress-1.svg" alt="Cypress" class="w-6 h-6"/>
+          <h3 class="font-semibold text-lg text-gray-800">Cypress</h3>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div id="Cypress-progress" class="bg-green-400 h-3 rounded-full" style="width:0%;"></div>
+        </div>
+        <span id="Cypress-percent" class="text-sm text-gray-700">0%</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Certificates Section -->
+<section id="certificates" class="bg-indigo-50 py-20 px-6 md:px-20 max-w-7xl mx-auto">
+  <h2 class="text-3xl font-extrabold text-gray-900 mb-12 text-center">Certificates</h2>
+  <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+
+       <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <img src="https://g-sit.com/assets/img/products/banner-it-support.svg" alt="Certificate Icon" class="w-15 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">IT Support</h3>
+      <p class="text-gray-600 text-sm mb-2">Google · 2022</p>
+      <a href="img\IT_Support.jpg" target="_blank" 
+         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
+      </a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <img src="https://img.freepik.com/vektor-gratis/ilustrasi-devops-desain-datar_52683-84086.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">DevOps</h3>
+      <p class="text-gray-600 text-sm mb-2">Dicoding · 2024</p>
+      <a href="img\Devops.jpg" target="_blank" 
+         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
+      </a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <img src="https://img.freepik.com/vector-premium/ilustracion-vector-diseno-estilo-plano-gestion-tareas-ilustracion-stock_357500-315.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">Management project</h3>
+      <p class="text-gray-600 text-sm mb-2">Dicoding · 2024</p>
+      <a href="img\Manpro.jpg" target="_blank" 
+         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
+      </a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/python-programming-language-icon.png" alt="Certificate Icon" class="w-25 h-10 mb-4">
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">Python Programming Language</h3>
+      <p class="text-gray-600 text-sm mb-2">Dicoding · 2024</p>
+      <a href="img\Phyton.jpg" target="_blank" 
+         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
+      </a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <img src="https://img.freepik.com/premium-vector/data-server-web-concept-storage-technology-database-template-people-scene-vector-illustration-with-character-activities-flat-design-website-folder-data-center_128772-1906.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">Structured Query Language (SQL)</h3>
+      <p class="text-gray-600 text-sm mb-2">Dicoding · 2023</p>
+      <a href="img\SQL.jpg" target="_blank" 
+         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
+      </a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRq--UkWTJV1P3Hjk-2kEtB0a5DMqfuRf6uS4T7irweuqcTgDnPetmNNnUSEoKFVE32E&usqp=CAU" alt="Certificate Icon" class="w-15 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">Data Science</h3>
+      <p class="text-gray-600 text-sm mb-2">Dicoding · 2023</p>
+      <a href="img\Data Science.jpg" target="_blank" 
+         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
+      </a>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <img src="https://media.licdn.com/dms/image/v2/D4E12AQHG97PU0IgblQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1677575050161?e=2147483647&v=beta&t=sbgrDQC8mZAdnD5NDC1w6-8R4Du0XwZ5BFvFeO1TJTo" alt="Certificate Icon" class="w-15 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">Machine Learning</h3>
+      <p class="text-gray-600 text-sm mb-2">Kaggle · 2024</p>
+      <a href="img\Machine Learning.jpg" target="_blank" 
+         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
+      </a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <img src="https://static.vecteezy.com/system/resources/previews/004/580/435/non_2x/ui-ux-programmer-flat-design-illustration-vector.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">UI/UX</h3>
+      <p class="text-gray-600 text-sm mb-2">Rakamin Academy · 2023</p>
+      <a href="img\UX.jpg" target="_blank" 
+         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
+      </a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <img src="https://img.freepik.com/vektor-premium/dua-pria-berdiskusi-tentang-data-server-cloud_18660-3118.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">Cisco</h3>
+      <p class="text-gray-600 text-sm mb-2">Cisco Academy · 2025</p>
+      <a href="img\Cisco.jpg" target="_blank" 
+         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
+      </a>
+    </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-2xl mx-auto px-6 md:px-0 py-16">
+    <h2 class="text-3xl font-extrabold mb-6 text-center">Contact</h2>
+    <p class="text-center mb-10 text-gray-600 leading-relaxed">Let’s connect! Reach out to me through the contacts below.</p>
+    <div class="bg-white p-6 rounded-lg shadow-lg space-y-6">
+      <div class="flex items-center space-x-4">
+        <span class="text-purple-700 text-xl">📧</span>
+        <a href="mailto:avisavisenna@gmail.com" class="text-gray-700 hover:text-blue-500 transition">avisavisenna@gmail.com</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/6285143219237" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-blue-500 transition">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png" alt="WhatsApp Logo" class="w-6 h-6" />
+          <span>+62 851-4321-9237</span>
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.linkedin.com/in/muhavisennakusumadani" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-blue-500 transition">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn Logo" class="w-6 h-6" />
+          <span>muhavisennakusumadani</span>
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://github.com/Avisenna21" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-blue-500 transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github Logo" class="w-6 h-6" />
+          <span>Avisenna21</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="w-full border-t border-gray-200 bg-white py-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+      <a href="#" class="text-xl font-semibold text-blue-700 tracking-wide mb-4 md:mb-0">My Portofolio</a>
+      <ul class="flex space-x-6 text-gray-600 font-medium text-sm mb-4 md:mb-0">
+        <li><a href="#home" class="hover:text-blue-500 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-500 transition">About</a></li>
+        <li><a href="#expertise" class="hover:text-blue-500 transition">Expertise</a></li>
+        <li><a href="#portfolio" class="hover:text-blue-500 transition">Portfolio</a></li>
+        <li><a href="#skills" class="hover:text-blue-500 transition">Skills</a></li>
+        <li><a href="#certificates" class="hover:text-blue-500 transition">Certificates</a></li>
+      </ul>
+      <p class="text-gray-400 text-xs text-center md:text-right">© 2025 Portofolio by Muh. Avisenna Kusumadani</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
