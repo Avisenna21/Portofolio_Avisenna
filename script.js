@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
-const text1 = "I am a final-year Software Engineering student passionate about Software Development and technology innovation. With a strong foundation in logical thinking and problem-solving, I see every challenge as an opportunity to grow and create impactful solutions.";
+const text1 = "I am freshgraduate Software Engineering student passionate about Software Development and technology innovation. With a strong foundation in logical thinking and problem-solving, I see every challenge as an opportunity to grow and create impactful solutions.";
 const text2 = "I enjoy the full software development process—from brainstorming ideas to implementation—and thrive in collaborative environments. Known for being detail-oriented, communicative, and adaptable, I continuously strive to enhance both my technical and soft skills.";
 
 const el1 = document.getElementById("typing-text");
@@ -123,4 +123,5 @@ function backToCategory(category) {
       }, skill.speed);
     });
   });
+
 
