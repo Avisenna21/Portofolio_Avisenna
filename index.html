@@ -462,92 +462,128 @@
 
 
   <!-- Certificates Section -->
-<section id="certificates" class="bg-indigo-50 py-20 px-6 md:px-20 max-w-7xl mx-auto">
-  <h2 class="text-3xl font-extrabold text-gray-900 mb-12 text-center">Certificates</h2>
-  <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+<section id="certificates" class="bg-indigo-50 py-20 px-6 md:px-20 max-w-7xl mx-auto relative">
+  <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Certificates</h2>
 
-       <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <img src="https://g-sit.com/assets/img/products/banner-it-support.svg" alt="Certificate Icon" class="w-15 h-16 mb-4">
-      <h3 class="font-semibold text-lg text-gray-900 mb-2">IT Support</h3>
-      <p class="text-gray-600 text-sm mb-2">Google · 2022</p>
-      <a href="img\IT_Support.jpg" target="_blank" 
-         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
-      </a>
-    </div>
+  <div class="relative">
+    <!-- Tombol kiri -->
+    <button id="certPrev"
+      class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white hover:bg-blue-700 shadow-md rounded-full p-3 z-20 opacity-95 focus:outline-none"
+      aria-label="Scroll left">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8"/>
+      </svg>
+    </button>
 
-    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <img src="https://img.freepik.com/vektor-gratis/ilustrasi-devops-desain-datar_52683-84086.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
-      <h3 class="font-semibold text-lg text-gray-900 mb-2">DevOps</h3>
-      <p class="text-gray-600 text-sm mb-2">Dicoding · 2024</p>
-      <a href="img\Devops.jpg" target="_blank" 
-         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
-      </a>
-    </div>
+    <!-- Scroll container -->
+    <div id="certScroll" class="flex gap-8 overflow-x-auto pb-6 scroll-smooth no-scrollbar px-12">
 
-    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <img src="https://img.freepik.com/vector-premium/ilustracion-vector-diseno-estilo-plano-gestion-tareas-ilustracion-stock_357500-315.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
-      <h3 class="font-semibold text-lg text-gray-900 mb-2">Management project</h3>
-      <p class="text-gray-600 text-sm mb-2">Dicoding · 2024</p>
-      <a href="img\Manpro.jpg" target="_blank" 
-         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
-      </a>
-    </div>
+      <!-- CARD 1 -->
+      <article class="flex-shrink-0 w-72 bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/004/579/231/small/it-support-and-application-maintenance-free-vector.jpg" alt="UI/UX Design" class="w-full h-40 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">IT Support</h3>
+          <p class="text-gray-500 text-sm mb-4">Google · 2022</p>
+          <button class="btn-show bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+            data-cert="img\IT_Support.jpg">
+            View Certificates
+          </button>
+        </div>
+      </article>
 
-    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/python-programming-language-icon.png" alt="Certificate Icon" class="w-25 h-10 mb-4">
-      <h3 class="font-semibold text-lg text-gray-900 mb-2">Python Programming Language</h3>
-      <p class="text-gray-600 text-sm mb-2">Dicoding · 2024</p>
-      <a href="img\Phyton.jpg" target="_blank" 
-         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
-      </a>
-    </div>
+      <!-- CARD 2 -->
+      <article class="flex-shrink-0 w-72 bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="https://img.freepik.com/vektor-gratis/ilustrasi-devops-desain-datar_52683-84086.jpg" alt="Testing" class="w-full h-40 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">DevOps</h3>
+          <p class="text-gray-500 text-sm mb-4">Dicoding · 2024</p>
+          <button class="btn-show bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+            data-cert="img\Devops.jpg">
+            View Certificates
+          </button>
+        </div>
+      </article>
 
-    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <img src="https://img.freepik.com/premium-vector/data-server-web-concept-storage-technology-database-template-people-scene-vector-illustration-with-character-activities-flat-design-website-folder-data-center_128772-1906.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
-      <h3 class="font-semibold text-lg text-gray-900 mb-2">Structured Query Language (SQL)</h3>
-      <p class="text-gray-600 text-sm mb-2">Dicoding · 2023</p>
-      <a href="img\SQL.jpg" target="_blank" 
-         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
-      </a>
-    </div>
+      <!-- CARD 3 -->
+      <article class="flex-shrink-0 w-72 bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="https://cdn-icons-png.flaticon.com/512/1822/1822920.png" alt="Frontend" class="w-full h-40 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">Management Project</h3>
+          <p class="text-gray-500 text-sm mb-4">Dicoding · 2023</p>
+          <button class="btn-show bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+            data-cert="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/CERTIFICATE_EXAMPLE.svg/1200px-CERTIFICATE_EXAMPLE.svg.png">
+            Tampilkan
+          </button>
+        </div>
+      </article>
 
-    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRq--UkWTJV1P3Hjk-2kEtB0a5DMqfuRf6uS4T7irweuqcTgDnPetmNNnUSEoKFVE32E&usqp=CAU" alt="Certificate Icon" class="w-15 h-16 mb-4">
-      <h3 class="font-semibold text-lg text-gray-900 mb-2">Data Science</h3>
-      <p class="text-gray-600 text-sm mb-2">Dicoding · 2023</p>
-      <a href="img\Data Science.jpg" target="_blank" 
-         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
-      </a>
-    </div>
-    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <img src="https://media.licdn.com/dms/image/v2/D4E12AQHG97PU0IgblQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1677575050161?e=2147483647&v=beta&t=sbgrDQC8mZAdnD5NDC1w6-8R4Du0XwZ5BFvFeO1TJTo" alt="Certificate Icon" class="w-15 h-16 mb-4">
-      <h3 class="font-semibold text-lg text-gray-900 mb-2">Machine Learning</h3>
-      <p class="text-gray-600 text-sm mb-2">Kaggle · 2024</p>
-      <a href="img\Machine Learning.jpg" target="_blank" 
-         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
-      </a>
-    </div>
+      <!-- CARD 4 -->
+      <article class="flex-shrink-0 w-72 bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
+        <img src="https://cdn-icons-png.flaticon.com/512/709/709496.png" alt="QA" class="w-full h-40 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">Quality Assurance</h3>
+          <p class="text-gray-500 text-sm mb-4">Rakamin · 2023</p>
+          <button class="btn-show bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+            data-cert="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Certificate_template.svg/1280px-Certificate_template.svg.png">
+            Tampilkan
+          </button>
+        </div>
+      </article>
 
-    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <img src="https://static.vecteezy.com/system/resources/previews/004/580/435/non_2x/ui-ux-programmer-flat-design-illustration-vector.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
-      <h3 class="font-semibold text-lg text-gray-900 mb-2">UI/UX</h3>
-      <p class="text-gray-600 text-sm mb-2">Rakamin Academy · 2023</p>
-      <a href="img\UX.jpg" target="_blank" 
-         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
-      </a>
+      <div class="flex-shrink-0 w-6"></div>
     </div>
 
-    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <img src="https://img.freepik.com/vektor-premium/dua-pria-berdiskusi-tentang-data-server-cloud_18660-3118.jpg" alt="Certificate Icon" class="w-15 h-16 mb-4">
-      <h3 class="font-semibold text-lg text-gray-900 mb-2">Cisco</h3>
-      <p class="text-gray-600 text-sm mb-2">Cisco Academy · 2025</p>
-      <a href="img\Cisco.jpg" target="_blank" 
-         class="text-blue-600 hover:underline text-sm font-medium">View Certificate
-      </a>
-    </div>
-    </div>
+    <!-- Tombol kanan -->
+    <button id="certNext"
+      class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white hover:bg-blue-700 shadow-md rounded-full p-3 z-20 opacity-95 focus:outline-none"
+      aria-label="Scroll right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+      </svg>
+    </button>
   </div>
 </section>
+
+<!-- Modal untuk menampilkan sertifikat -->
+<div id="certModal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+  <div class="bg-white p-4 rounded-2xl max-w-4xl w-11/12 relative">
+    <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+    <img id="certImage" src="" alt="Certificate" class="w-full h-auto rounded-lg">
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  const prev = document.getElementById('certPrev');
+  const next = document.getElementById('certNext');
+  const container = document.getElementById('certScroll');
+  const modal = document.getElementById('certModal');
+  const certImg = document.getElementById('certImage');
+  const closeModal = document.getElementById('closeModal');
+
+  const scrollAmount = 320;
+
+  prev.addEventListener('click', () => container.scrollBy({ left: -scrollAmount, behavior: 'smooth' }));
+  next.addEventListener('click', () => container.scrollBy({ left: scrollAmount, behavior: 'smooth' }));
+
+  document.querySelectorAll('.btn-show').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const imgSrc = btn.getAttribute('data-cert');
+      certImg.src = imgSrc;
+      modal.classList.remove('hidden');
+    });
+  });
+
+  closeModal.addEventListener('click', () => modal.classList.add('hidden'));
+  modal.addEventListener('click', e => {
+    if (e.target === modal) modal.classList.add('hidden');
+  });
+</script>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
 
   <!-- Contact Section -->
   <section id="contact" class="max-w-2xl mx-auto px-6 md:px-0 py-16">
@@ -598,3 +634,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
